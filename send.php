@@ -3,7 +3,7 @@
 require_once 'swiftmailer-5.x/lib/swift_required.php';
 
 
-	$message = "Повідомлення нема :( \r\nвоно пусте або не заповнене хочаб одне з обовязкових полів!!! Фатал ерор бляха-муха :) Ромку - шукай в себе десь ))) ";
+	$message = "Повідомлення нема :( \r\n ";
 	if( isset($_POST['first-name']) && isset($_POST['email']) && isset($_POST['phone']) ) {
 		$message = "
 		Name: {$_POST['first-name']}
@@ -15,8 +15,8 @@ require_once 'swiftmailer-5.x/lib/swift_required.php';
 $swift_message = Swift_Message::newInstance()
 	->setSubject('Реєстрація нового користувача')
 	// Set the From address with an associative array
-	->setFrom(array('wowes@test.com' => 'hr-kavjarnia'))
-	->setTo(array('rnyschyy@gmail.com' => 'Получатель письма'))
+	->setFrom(array('noreply@hr-kavjarnia.com.ua' => 'hr-kavjarnia'))
+	->setTo(array('info@hr-kavjarnia.com.ua' => 'Получатель письма'))
 	->addPart($message, 'text/html')
 ;
 
