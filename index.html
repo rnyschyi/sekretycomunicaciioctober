@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head lang="UA">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>HR cof pr_1</title>
+  <meta name="description" content="HR cof_pr1"/>
+  <meta name="keywords" content="HR, recruitment">
+  <meta property="og:title" content="">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script>
+        // wait for the DOM to be loaded
+        $(document).ready(function() {
+            // bind 'myForm' and provide a simple callback function
+            $('#myForm').ajaxForm(function() {
+                alert("Thank you for your comment!");
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="top-header">
+</div>
+
+<!-- === MAIN Background === -->
+<div class="slide story" id="slide-1" data-slide="1">
+  <div class="container">
+    <div id="home-row-1" class="row clearfix">
+      <div class="col-12">
+        <h1 class="font-semibold">назва заходу <span class="font-thin">захід</span></h1>
+        <h4 class="font-thin">Коротко про захід <span class="font-semibold">lorem ipsum</span> dolor sit amet</h4>
+        <br>
+        <br>
+      </div>
+      <!-- /col-12 -->
+    </div>
+    <!-- /row -->
+    <div id="home-row-2" class="row clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="embed-responsive embed-responsive-video">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a7UFm6ErMPU?list=RDa7UFm6ErMPU"
+                      frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="registration">
+              <form id="myForm" action="send.php" method="post" class="form-top">
+
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Ваше ім'я *" name="first-name" id="name" required="required">
+
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Ваш Email *" name="email" id="email" required="required">
+
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" placeholder="Ваш телефон *" name="phone" id="phone" required="required">
+
+                  <p class="help-block text-danger" id="error"></p>
+                </div>
+                  <button type="submit" id="send-form" class="btn btn-block btn-danger form-top-btn">Зареєструватись</button>
+              </form>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide1 -->
+
+  <!-- === Slide 2 === -->
+  <div class="slide story" id="slide-2" data-slide="2">
+    <div class="container">
+
+      <div class="row mt centered">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1 class="event-persons">Учасники конференції</h1>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row mt centered">
+        <div class="col-lg-3">
+          <img class="img-circle" src="images/pic1.jpg" width="140" alt="">
+
+          <h2>Власники бізнесу</h2>
+
+          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever.</p>
+        </div>
+        <!--/col-lg-4 -->
+
+        <div class="col-lg-3">
+          <img class="img-circle" src="images/pic2.jpg" width="140" alt="">
+
+          <h2>Рекрутери</h2>
+
+          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever.</p>
+        </div>
+        <!--/col-lg-4 -->
+
+        <div class="col-lg-3">
+          <img class="img-circle" src="images/pic3.jpg" width="140" alt="">
+
+          <h2>HR-s</h2>
+
+          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever.</p>
+        </div>
+        <!--/col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="images/pic3.jpg" width="140" alt="">
+
+          <h2>Хто працює з людьми</h2>
+
+          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever.</p>
+        </div>
+        <!--/col-lg-4 -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide2 -->
+
+  <!-- === SLide 3 - Portfolio -->
+  <div class="slide story" id="slide-3" data-slide="3">
+    <div class="container">
+      <div class="col-md-4">
+        <div class="pricing_header">
+          <h2>Basic User</h2>
+
+          <div class="space"></div>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> HTML5 & CSS3</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+        </ul>
+
+        <div class="try">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing_header">
+          <h2>Basic User</h2>
+
+          <div class="space"></div>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> HTML5 & CSS3</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+        </ul>
+        <div class="try">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing_header">
+          <h2>Basic User</h2>
+
+          <div class="space"></div>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> HTML5 & CSS3</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
+          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+        </ul>
+
+
+      </div>
+      <div class="col-md-12">
+
+        <form name="registration" class="form-down" novalidate>
+
+          <div class="col-md-7 col-centered">
+            <div class="form-group-btn">
+              <button type="submit" class="btn btn-block btn-danger" id="reg-top">Зареєструватись</button>
+            </div>
+          </div>
+        </form>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /slide3 -->
+
+  <!-- === Slide 5 === -->
+  <div class="slide story" id="slide-5" data-slide="5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Тренінги проводить:</h2>
+        </div>
+      </div>
+      <!-- USER PROFILE ROW STARTS-->
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+
+          <div class="user-wrapper">
+            <img src="images/pic3.jpg" class="img-responsive"/>
+          </div>
+        </div>
+
+        <div class="col-md-9 col-sm-9  user-wrapper">
+          <div class="description">
+            <h3> HR Biography : </h3>
+            <hr/>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aliquam suscipit egestas eros, ut maximus magna blandit ut.
+              Suspendisse vel molestie sapien.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Fusce sit amet egestas dui, vitae tincidunt justo.
+            </p>
+
+            <p>
+              Etiam eleifend massa congue magna pretium, id blandit dui pulvinar.
+              Nam et pulvinar risus, vel blandit risus.
+              Maecenas tristique volutpat ante, aliquet hendrerit felis aliquet nec.
+              Curabitur rutrum tincidunt erat, ac feugiat libero gravida ac.
+              Suspendisse ut varius quam, vitae rutrum metus.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- USER PROFILE ROW END-->
+    </div>
+  </div>
+  <!-- /slide5 -->
+
+  <!-- === Slide 6 / Contact === -->
+  <div class="slide story" id="slide-6" data-slide="6">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-light">Зворотній зв'язок з нами</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-10 font-light">Ви можете знайти нас де завгодно, просто наведіть на будь-яку кнопку
+          нижче, і отримайте контактні дані
+        </div>
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div id="contact-row-4" class="row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="icon icon-phone"></i></a></p>
+          <span class="hover-text font-light ">+380 00 000 000 </span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="icon icon-envelope"></i></a></p>
+          <span class="hover-text font-light ">test@test.co</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="icon icon-home"></i></a></p>
+          <span class="hover-text font-light ">Ukraine, Lviv<br>zip code 00000</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="icon icon-facebook"></i></a></p>
+          <span class="hover-text font-light ">facebook/link</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="icon icon-twitter"></i></a></p>
+          <span class="hover-text font-light ">@test</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /Slide 6 -->
+    <!--<script src="js/html5shiv.js"></script>-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!--<script src="js/script.js"></script>-->
+
+  </div>
+  </body>
+  </html>
