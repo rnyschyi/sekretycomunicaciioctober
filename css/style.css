@@ -680,3 +680,6 @@ body {
 .container{
 	padding-top: 20px;
 }
+.text-muted{
+    font-size: 12px;
+}
