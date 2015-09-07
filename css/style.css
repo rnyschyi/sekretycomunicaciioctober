@@ -672,10 +672,12 @@ body {
 }
 
 .top-header{
-	background-image: url('../images/bg1.jpg');
-	height: 200px;
+	background-image: url('../images/bg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 500px;
 	width: 100%;
-	background-attachment: relative;
+
 	background-position: center center;
 }
 .centered-form{
