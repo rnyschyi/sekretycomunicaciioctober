@@ -27,7 +27,7 @@ html, body {
 }
 
 body {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgb(70, 31, 16);
 	font-family: "Titillium Web", sans-serif;
 	font-weight: normal;
 	overflow-x: hidden;
@@ -706,21 +706,21 @@ body {
 }
 
 .form-control {
-    color: #FFFFFF;
-    background-color: #d9534f;
-    border-color: #d43f3a;
+    color: #461f10;
+    font-size: 18px;
+    background-color: #fafad8;
+    border-color: #a34222;
     height: 45px;
 }
 .form-group{
     margin-bottom: 40px;
 }
-#name{
-    color: white;
-}
-INPUT[type="text"] {
+
+
+/*INPUT[type="text"] {
     background-color: #d9534f;
     color: #f5f4f6;
-}
+}*/
 .reg{
 	padding-left: 25%;
 	width: 75%;
