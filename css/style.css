@@ -443,7 +443,8 @@ body {
 #slide-6 {
 	background-color: #2f2f2f;
 	color: #e4e6e5;
-	padding-top: 30px;
+	padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -530,76 +531,9 @@ body {
 	z-index: 999;
 }
 */
-#arrows {
-	bottom: 10%;
-	height: 80px;
-	position: fixed;
-	right: 10%;
-	width: 80px;
-	z-index: 1000;
-}
-
-#arrows div {
-	background-image: url('../images/website-arrows.png');
-	cursor: pointer;
-	height: 30px;
-	position: absolute;
-	width: 30px;
-}
-
-#arrows div.disabled {
-	cursor: default;
-}
-
-#arrow-up {
-	background-position: 30px 0;
-	left: 25px;
-	top: 0;
-}
-
-#arrow-up.disabled {
-	background-position: 0 0;
-}
-
-#arrow-down {
-	background-position: 30px -30px;
-	left: 25px;
-	bottom: 0;
-}
-
-#arrow-down.disabled {
-	background-position: 0 -30px;
-}
-
-#arrow-left {
-	background-position: 30px -60px;
-	left: 0;
-	top: 25px;
-}
-
-#arrow-left.disabled {
-	background-position: 0 -60px;
-}
-
-#arrow-right {
-	background-position: 30px -90px;
-	right: 0;
-	top: 25px;
-}
-
-#arrow-right.disabled {
-	background-position: 0 -90px;
-}
 
 .navigation-slide {
 	cursor: pointer;
-}
-.video{
-	float: left;
-}
-
-.video{
-    padding-right: 10px;
 }
 
 .btn-primary {
