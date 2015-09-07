@@ -18,10 +18,13 @@
     <script src="http://malsup.github.com/jquery.form.js"></script>
     <script>
         // wait for the DOM to be loaded
-        $(document).ready(function() {
+            $(document).ready(function() {
+                var formTopBtn = $('.form-top-btn'),
+                    formDownBtn = $('.form-down-btn');
             // bind 'myForm' and provide a simple callback function
             $('#myForm').ajaxForm(function() {
-                alert("Thank you for your comment!");
+                formTopBtn.removeClass('btn-danger').addClass('btn-success').html("Відправлено").prop('disabled', true);
+                formDownBtn.removeClass('btn-danger').addClass('btn-success').html("Відправлено").prop('disabled', true);
             });
         });
     </script>
@@ -37,7 +40,7 @@
     <div id="home-row-1" class="row clearfix">
       <div class="col-12">
         <h2 class="font-semibold">Запрошуємо на серію безкоштовних уроків!</span></h2>
-        <h3 class="font-thin"><i>Вхід можливий тільки за умови попередньої реєстрації </i><span class="icon icon-arrow-down"></span> </h3>
+        <h3 class="font-thin"><i>Доступ можливий тільки за умови попередньої реєстрації </i><span class="icon-large icon-arrow-down"></span> </h3>
         <br>
         <br>
       </div>
@@ -202,7 +205,7 @@
 
           <div class="col-md-7 col-centered">
             <div class="form-group-btn">
-              <button type="submit" class="btn btn-block btn-danger" id="reg-top">Зареєструватись</button>
+              <a href="#slide-1" class="btn btn-block btn-danger form-down-btn" id="reg-top">Зареєструватись </a>
             </div>
           </div>
         </form>
@@ -263,7 +266,7 @@
   <div class="slide story" id="slide-6" data-slide="6">
     <div class="container">
       <div class="row title-row">
-        <div class="col-12 font-light">Зворотній зв'язок з нами</span></div>
+        <div class="col-12 font-light">Виникли питання? Зв'яжіться з нами!</span></div>
       </div>
       <!-- /row -->
       <div class="row line-row">

@@ -47,21 +47,19 @@ $(document).ready(function(e) {
 
 });
 
-jQuery( document ).ready(function() {
-	jQuery('#reg-top').mouseover( function(){
-		jQuery( this ).animate({opacity: 0.65},100);
-	}).mouseout( function(){
-		jQuery( this ).animate({opacity: 1},100);
-	}).click( function(){
-		window.scroll(0 ,0);
-		return false;
-	});
 
-	jQuery(window).scroll(function(){
-		if ( jQuery(document).scrollTop() > 0 ) {
-			jQuery('#reg-top').fadeIn('fast');
-		} else {
-			jQuery('#reg-top').fadeOut('fast');
-		}
+$(document).ready(function(){
+	$("#reg-top").on("click", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 800);
 	});
 });
