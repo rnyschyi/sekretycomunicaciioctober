@@ -129,13 +129,17 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
 	#slide-4 .content-row h2 {
 		min-height: 6em;
 	}
 }
 
 @media (max-width: 767px) {
-	
+
 	.nav li {
 		text-align: left;
 		white-space: nowrap;
