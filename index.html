@@ -3,7 +3,7 @@
 <head lang="UA">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>HR cof pr_1</title>
+  <title>Секрети ефективної комунікації</title>
   <meta name="description" content="sekretycomunicaciioctober"/>
   <meta name="keywords" content="HR, recruitment">
   <meta property="og:title" content="">
@@ -25,9 +25,13 @@
             $('#myForm').ajaxForm(function() {
                 formTopBtn.removeClass('btn-danger').addClass('btn-success').html("Відправлено").prop('disabled', true);
                 formDownBtn.removeClass('btn-danger').addClass('btn-success').html("Відправлено").prop('disabled', true);
+                document.getElementById("send-form").onclick = setTimeout(function () {
+                    window.location.href = "redirect.html"; //will redirect to your blog page (an ex: blog.html)
+                }, 3000);
             });
         });
     </script>
+
 </head>
 
 <body>
@@ -40,7 +44,7 @@
     <div id="home-row-1" class="row clearfix">
       <div class="col-12">
         <h2 class="font-semibold">Запрошуємо на серію безкоштовних уроків!</span></h2>
-        <h3 class="font-thin"><i>Доступ можливий тільки за умови попередньої реєстрації </i><span class="icon-large icon-arrow-down"></span> </h3>
+        <h3 class="font-thin"><i>Доступ можливий тільки за умови попередньої реєстрації </i><img src="images/arrow.png"> </h3>
         <br>
         <br>
       </div>
@@ -52,8 +56,10 @@
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <div class="embed-responsive embed-responsive-video">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a7UFm6ErMPU?list=RDa7UFm6ErMPU ?rel=0&autoplay=1"
-                      frameborder="0" allowfullscreen></iframe>
+                <video width="320" height="240" autoplay>
+                    <source src="http://www.ex.ua/show/190866674/bb92fa47da04258a5d4b9c19761e5c28.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
@@ -94,8 +100,8 @@
     <div class="container">
 
       <div class="row mt centered">
-        <div class="col-lg-6 col-lg-offset-3">
-          <h1 class="event-persons">Для кого наші уроки можуть бути цікаві?</h1>
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2 class="font-semibold">Для кого наші уроки можуть бути корисні?</h2>
         </div>
       </div>
       <!-- /row -->
@@ -103,39 +109,35 @@
         <div class="col-lg-3">
           <img class="img-circle" src="images/pic1.jpg" width="140" alt="">
 
-          <h2>Власники бізнесу</h2>
+          <h4 class="font-semibold">HR-и та рекрутери</h4>
 
-          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever.</p>
+          <p class="about-user"><em>Кожного дня Ви спілкуєтесь з різними людьми, і кожного шукаєте свій ключик? Ми маємо в запасі кілька ключиків, які допоможуть Вам не тільки краще зрозуміти працівника чи кандидата, але і зрозуміти де він зможе себе найкраще реалізувати.</em></p>
         </div>
         <!--/col-lg-4 -->
 
         <div class="col-lg-3">
           <img class="img-circle" src="images/pic2.jpg" width="140" alt="">
 
-          <h2>Рекрутери</h2>
+          <h4 class="font-semibold">Власники бізнесу</h4>
 
-          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever.</p>
+          <p class="about-user"><em>Ви як ніхто, напевно, розумієте важливість ефективної комунікації. Оскільки Ви - лице компанії, потрібно вміти не тільки вміти нею керувати, але й знаходити спільну мову з різними категоріями людей, з різних сфер</em></p>
         </div>
         <!--/col-lg-4 -->
 
         <div class="col-lg-3">
           <img class="img-circle" src="images/pic3.jpg" width="140" alt="">
 
-          <h2>HR-s</h2>
+          <h4 class="font-semibold">Менеджери по роботі з клієнтами, консультанти</h4>
 
-          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever.</p>
+          <p class="about-user"><em>Деколи дрібниця може привести як до фатального провалу так і до шаленого успіху переговорів чи продажу. Як краще зрозуміти свого клієнта та зробити йому вигідну(як для нього, так і для Вас) пропозицію? Дізнаєтесь на наших уроках.</em></p>
         </div>
         <!--/col-lg-4 -->
         <div class="col-lg-3">
           <img class="img-circle" src="images/pic3.jpg" width="140" alt="">
 
-          <h2>Хто працює з людьми</h2>
+          <h4 class="font-semibold">Прагнете саморозвитку?</h4>
 
-          <p class="about-user">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever.</p>
+          <p class="about-user"><em>Ви постійно розвиваєтесь? Прагнете здобувати нові знання та навички? Наші уроки допоможуть Вам краще зрозуміти себе та оточуючих, а найголовніше - зможуть підказати в якому напрямку рухатись, щоб стати ще більше ефективним</em></p>
         </div>
         <!--/col-lg-4 -->
       </div>
@@ -150,17 +152,16 @@
     <div class="container">
       <div class="col-md-4">
         <div class="pricing_header">
-          <h2>Basic User</h2>
+          <h4>Урок 1. Запізнення. Негативна характеристика чи тип мислення?</h4>
 
           <div class="space"></div>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> HTML5 & CSS3</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+          <li class="list-group-item">- Чому деякі люди не можуть вчасно прийти/подати звіт/виконати обіцяне?</li>
+          <li class="list-group-item">- Що таке наскрізний та включений час?</li>
+          <li class="list-group-item">- Як визначити власний тип часу?</li>
+          <li class="list-group-item">- Як використати особливості сприймання часу свої/колег/клієнтів на свою користь?</li>
+
         </ul>
 
         <div class="try">
@@ -168,37 +169,30 @@
       </div>
       <div class="col-md-4">
         <div class="pricing_header">
-          <h2>Basic User</h2>
+          <h4>Урок 2. Що краще для ефективної комунікації: шукати відмінність чи схожість?</h4>
 
           <div class="space"></div>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> HTML5 & CSS3</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+          <li class="list-group-item">- Які особливості людей з різним фокусом порівняння?</li>
+          <li class="list-group-item">- Як відрізнити особу з тим чи іншим фокусом порівняння?</li>
+          <li class="list-group-item">- Як ми можемо використати особливості такого сприймання на користь компанії?</li>
         </ul>
         <div class="try">
         </div>
       </div>
       <div class="col-md-4">
         <div class="pricing_header">
-          <h2>Basic User</h2>
+          <h4>Урок 3. Ще раз про морквочку. Або що мотивує їх прийняти рішення?</h4>
 
           <div class="space"></div>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> HTML5 & CSS3</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
-          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+          <li class="list-group-item">- Два основні типи мотивації</li>
+          <li class="list-group-item">- За якої умови почнуть діяти люди з тою чи іншою мотивацією?</li>
+          <li class="list-group-item">- Як схилити людину до прийняття рішення на Вашу користь?</li>
+          <li class="list-group-item">- Яка найкраща мотивація?</li>
         </ul>
-
-
       </div>
       <div class="col-md-12">
 
@@ -206,7 +200,7 @@
 
           <div class="col-md-7 col-centered">
             <div class="form-group-btn">
-              <a href="#slide-1" class="btn btn-block btn-danger form-down-btn" id="reg-top">Зареєструватись </a>
+              <a href="#slide-1" class="btn btn-block btn-danger form-down-btn" id="reg-top">Зареєструватись</a>
             </div>
           </div>
         </form>
@@ -221,8 +215,8 @@
   <div class="slide story" id="slide-5" data-slide="5">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h2>Тренінги проводить:</h2>
+        <div class="col-md-9 text-right">
+          <h2 class="font-semibold">Тренінги проводить:</h2>
         </div>
       </div>
       <!-- USER PROFILE ROW STARTS-->
@@ -236,22 +230,22 @@
 
         <div class="col-md-9 col-sm-9  user-wrapper">
           <div class="description">
-            <h3> HR Biography : </h3>
+            <h1> Анна Зайцева:</h1>
             <hr/>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aliquam suscipit egestas eros, ut maximus magna blandit ut.
-              Suspendisse vel molestie sapien.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Fusce sit amet egestas dui, vitae tincidunt justo.
+                - Сертифікований HR (кваліфікація SpHR Центр EU HRM підтверджена в 2013 р.) з 2009 року<br>
+                - Досвід в сфері управління персоналом 8 років на посадах регіонального менеджера з персоналу Західного регіону (8 філій логістичної компанії) та директора з персоналу.<br>
+                - Сертифікований NLP-практик<br>
+                - Досвід співпраці з компаніями у якості зовнішнього HR-консультанта.<br>
+                - Співзасновник Львівського клубу менеджерів з персоналу "HR-кав'ярня", який успішно функціонує вже 8 років не тільки у Львові, але і в містах Західної України<br>
+                - Тренер і спікер на конференціях, форумах, інтелектуальних дискусіях<br>
+                - Викладач курсу "Ефективна комунікація" для Нової Поліції<br>
             </p>
 
             <p>
-              Etiam eleifend massa congue magna pretium, id blandit dui pulvinar.
-              Nam et pulvinar risus, vel blandit risus.
-              Maecenas tristique volutpat ante, aliquet hendrerit felis aliquet nec.
-              Curabitur rutrum tincidunt erat, ac feugiat libero gravida ac.
-              Suspendisse ut varius quam, vitae rutrum metus.
+                Коментар від спікера:<br>
+                "Люди різні. У кожного свої інтереси, труднощі і потреби. І далеко не з кожним легко знайти спільну мову. Мені важко, але ж є ті, хто вміє домовитися з кожним. Як? В чому секрет? Відповідь на це питання цікавить мене віддавна.
+                Поки навчалася, я спостерігала за тими, чиє вміння домовлятися було на висоті. Потім було багато книжок і тренінгів, на яких вміння спілкуватися з різними людьми відпрацьовувалося крок за кроком. На кожному я відкривала для себе певні секрети. А далі практика, практика, практика.... за 9 років роботи з персоналом я навчилася знаходити спільну мову практично з кожною людиною. І зараз продовжую вчитися, і поділюсь з Вами знаннями і досвідом".
             </p>
 
           </div>
