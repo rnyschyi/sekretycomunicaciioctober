@@ -103,6 +103,9 @@ body {
 .special-active-menu {
 	z-index: 10;
 }
+#home-row-1 .col-12{
+	height: 140px;
+}
 
 #special-active-menu-1,
 #special-active-menu-6 {
@@ -215,7 +218,13 @@ body {
 	background-attachment: relative;
 	background-position: center center;
 }
+#slide-2 .font-semibold{
+    margin-bottom: 40px;
+}
 
+#reg-top{
+    padding: 10px 0 10px 0;
+}
 
 @media (max-width: 991px) {
 	#slide-1 {
@@ -232,8 +241,8 @@ body {
 
 	#home-row-1,
 	#home-row-2 {
-		padding-top: 25px;
-        padding-bottom: 30px;
+		padding-top: 5px;
+        padding-bottom: 5px;
 	}
 	
 	#home-row-1 h1 {
@@ -364,7 +373,7 @@ body {
 }
 
 #slide-3 {
-	background-color: #000;
+    background-color: rgb(70, 31, 16)
 	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 30px;
@@ -441,7 +450,7 @@ body {
 }
 
 #slide-6 {
-	background-color: #2f2f2f;
+	background-color: rgb(70, 31, 16);
 	color: #e4e6e5;
 	padding-top: 10px;
     padding-bottom: 20px;
@@ -568,7 +577,7 @@ body {
 }
 
 .user-wrapper .description {
-	padding: 25px;
+	padding: 10px 10px 0 10px;
 	background-color: #fff;
     width: 99%;
     height: 386px;
@@ -686,18 +695,37 @@ body {
 }
 .pricing_header{
 	text-align: center;
-    color: #75b1ae;
+    background-color: rgba(159, 63, 29, 0.74);
+    padding-top: 10px;
+}
+.pricing_header h4{
+    line-height: 1.2;
+    color: #fafad8;
 }
 .list-group-item{
-    color: #043454;
+    background-color: #fafad8;
+    color: #461f10;
+    padding: 15px 10px 15px 10px;
+    font-size: 16px;
 }
-
+.space{
+    background-color: #461f10;
+}
 #slide-5 h1{
     margin-top: 0;
 }
 .description p{
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
+    color: #724439;
+}
+hr{
+    margin: 4px;
+}
+
+.description h3{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .logo a{
     width: 100%;
