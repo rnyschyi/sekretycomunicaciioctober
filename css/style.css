@@ -477,8 +477,8 @@ body {
 }
 	
 	#slide-6 .line-row .hr {
-		background-color: #4e4e4e;
-		color: #4e4e4e;
+		background-color: #fafad8;
+		color: #fafad8;
 	}
 
 	#slide-6 a {
@@ -630,14 +630,11 @@ body {
 }
 
 .top-header{
-	background-image: url('../images/bg.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-	height: 500px;
-	width: 100%;
 
-	background-position: center center;
+	height: 400px;
+	width: 100%;
 }
+
 .centered-form{
 	margin-top: 60px;
 }
@@ -770,7 +767,6 @@ a:hover{
     text-decoration: none;
     color: #461f10;
     padding: 15px 10px 15px 10px;
-    font-size: 16px;
 }
 
 .redirect{
