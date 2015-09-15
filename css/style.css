@@ -644,7 +644,7 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 .embed-responsive-video {
-    padding-bottom: 56.25%;
+	height: 315px;
     margin-bottom: 10px;
 }
 .registration{
@@ -781,4 +781,12 @@ a:hover{
 }
 .correct{
     margin-bottom: 22px;
+}
+.vid-col{
+	padding-top: 50px;
+	padding-right: 10px;
+}
+
+#cp_widget_55af0636-9477-4a49-bbb5-cc21ae482f99{
+	padding-top: 50px;
 }
