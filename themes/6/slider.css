@@ -1,0 +1,97 @@
+
+#imageSliderWrapper, #imageSliderWrapper div {
+    box-sizing:content-box;
+}
+
+#imageSliderWrapper {padding:45px 40px;width:600px;height:370px;background:url(outerFrame.png);position:relative;margin:0 auto;}
+
+#imageSlider
+{
+    width:600px; height:300px;
+    padding:0;/*Note: never change this value other than 0 */
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+}
+
+/*--------div.item is each slides. It is the child div nodes of #imageSlider, and the wrapper of each slide image--------*/
+#imageSlider .item
+{
+    width:600px; height:300px;
+    color:White;
+    line-height:20px;
+}
+
+#imageSlider img
+{
+    width:600px; height:300px;
+}
+
+/*-----------description box----------------*/
+.descBg, .description
+{
+    width:160px;
+    height:20px;
+    top:20px;
+    left:20px;
+    position:absolute;
+    padding:4px;
+}
+.descBg
+{
+    background-color:#666;
+    border:1px solid black;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+    z-index:8;
+}
+.description
+{
+    color:White;
+    text-align:center;
+    font-size:13px;
+    z-index:9;
+}
+
+/*-----------navigation buttons----------------*/
+.navPrev, .navPlay, .navPause, .navNext
+{
+    width:29px; height:29px; position:absolute;
+    background:transparent url(navbuttons.gif);
+    display:inline-block; z-index:5; cursor:pointer;
+}
+.navPause {background-position:0 0;left:100px;top:376px;} .navPlay {background-position:0 -29px;left:100px;top:376px;} .navPrev {width:21px; height:21px;background-position:0 -79px;left:75px;top:380px;} .navNext {width:21px; height:21px;background-position:0 -58px;left:135px;top:380px;}
+
+
+.navPrev, .navPlay, .navPause, .navNext
+{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*-------------navigation bullets------------*/
+/* Note: When "ScrollAllInView" was set to true in the Javascript, the navBullets won't be displayed.*/
+.navBullets
+{
+    /*display:none;*/ /*set it display:none when you want to hide it*/
+    z-index:5;
+    cursor:pointer;
+    /*Specify the position of navigation buttons*/
+    position:relative;
+    top:38px;
+    left:240px;
+}
+/*.navBullets div defines the style of each bullet*/
+.navBullets div
+{
+    width:12px; height:12px;
+    background:transparent url(bullets.gif) no-repeat 0 0;
+    float:left;overflow:hidden;vertical-align:middle;cursor:pointer;
+    margin-right:10px;/*margin-right determines the distance between each list item*/
+    _position:relative;/*IE6 hack*/
+}
+
+.navBullets div.focus {background-position:0 -12px;}

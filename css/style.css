@@ -716,3 +716,17 @@ a:hover{
 #cp_widget_55af0636-9477-4a49-bbb5-cc21ae482f99{
 	padding-top: 50px;
 }
+.video-page{
+	margin-bottom: 50px;
+}
+#facebook{
+	background: white;
+}
+.col-md-6 .fb-comments{
+	background-color: white;
+}
+.disabled{
+	pointer-events: none;
+	/* for "disabled" effect */
+	opacity: 0.4;
+}
